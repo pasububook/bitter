@@ -65,3 +65,24 @@ h1{
     margin-top: 10px;
 }
 
+
+/* キーボード */
+#keybord{
+    position: fixed;
+    right: 10%;
+    bottom: 20px;
+}
+#now_num{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.numKey{
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    margin: 10px 5px;
+    color: var(--text);
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+}
