@@ -43,3 +43,25 @@ h1{
     display: inline-block;
     width: 90%;
 }
+
+
+/* インジケーター */
+#indicators{
+    text-align: center;
+}
+#time{
+    display: inline-block;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 500px;
+    padding: 3px 20px;
+    font-size: .9rem;
+    margin-top: 20px;
+}
+#question{
+    font-size: 2rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+
