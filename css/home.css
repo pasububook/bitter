@@ -4,6 +4,8 @@
     --shadow: 0px 4px 4px rgba(0, 0, 0, .25);
 
     --white: #FFFFFF;
+    --gray: #8E8E93;
+    --blue: #007AFF
 }
 
 *{
@@ -51,9 +53,7 @@ h1{
 }
 
 .btn_normal{
-    background-color: red;
-    border: none;
-    color: var(--text);
+    color: var(--blue);
     background-color: var(--white);
     box-shadow: var(--shadow);
     border: none;
@@ -64,4 +64,7 @@ h1{
     position: fixed;
     bottom: 20px;
     right: 10%;
+}
+.disabled{
+    color: var(--gray);
 }
