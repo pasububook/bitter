@@ -1,0 +1,40 @@
+:root{
+    /* 薄い色から 1, 2 とする */
+    --text: #000000;
+    --background_1: #F5F5F5;
+    --white: #FFFFFF;
+    --gray: #8E8E93;
+    --blue: #007AFF;
+    --green_1: #CFF7D3;
+    --green_2: #14AE5C;
+    --pink_1: #FAE1FA;
+    --pink_2: #D732A8;
+    --red: #FF3B30;
+
+    --shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--background_1);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: var(--white);
+}
+h1{
+    text-align: center;
+    margin: auto;
+    font-size: 1.5em;
+    color: var(--text);
+}
