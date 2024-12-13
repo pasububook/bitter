@@ -23,3 +23,20 @@ window.onload = function() {
     updateDisplay();
     startStopwatch();
 };
+
+// 常にclassがnoneのチェックボックスを取得
+const checkboxes = document.querySelectorAll('input[type="checkbox"].none');
+
+// 各チェックボックスにイベントリスナーを設定
+checkboxes.forEach(checkbox => {
+  checkbox.addEventListener('change', () => {
+    // チェック状態に応じて処理を実行
+    if (checkbox.checked) {
+      console.log('チェックボックスがオンになりました');
+      // チェックオン時の処理をここに記述
+    } else {
+      console.log('チェックボックスがオフになりました');
+      // チェックオフ時の処理をここに記述
+    }
+  });
+});
