@@ -32,11 +32,9 @@ function nextQuestion(){
 }
 nextQuestion()
 
-// 正解かどうか確認する関数
+// 正解かどうか確認する関数. Todo:将来的に削除
 function isTrue(userNum, ans){
-  // userNum: 2進数,  ans: 10進数
-  userNum2 = parseInt(userNum, 2)
-  
+  // userNum: 10進数,  ans: 10進数
   if (userNum2 == ans){
     return true
   }else{
@@ -86,6 +84,8 @@ const labelID = {
 // 常にclassがnoneのチェックボックスを取得
 const checkboxes = document.querySelectorAll('input[type="checkbox"].none');
 
+questionID = 1
+
 // 各チェックボックスにイベントリスナーを設定
 checkboxes.forEach(checkbox => {
   checkbox.addEventListener('change', () => {
@@ -98,6 +98,16 @@ checkboxes.forEach(checkbox => {
 
       // キーボード
       document.getElementById("now_num").textContent = to2(checkedID)
+
+      if (to2(checkedID) == nowNum){
+        alert("correct!")
+        if(questionID<=10){
+          questionID+=1
+          nextQuestion()
+          document.getElementById("progress_problem").value = questionID
+          document.getElementById("title").textContent = `${questionID}/10`
+        }
+      }
     } else {
       console.log('チェックボックスがオフになりました');
 
