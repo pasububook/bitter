@@ -25,11 +25,26 @@ window.onload = function() {
 };
 
 // 問題の番号を作成する関数
+var nowNum = 0
 function nextQuestion(){
   nowNum = Math.floor( Math.random() * 255)
   document.getElementById("question").textContent = nowNum
 }
 nextQuestion()
+
+// 正解かどうか確認する関数
+function isTrue(userNum, ans){
+  // userNum: 2進数,  ans: 10進数
+  userNum2 = parseInt(userNum, 2)
+  
+  if (userNum2 == ans){
+    return true
+  }else{
+    return false
+  }
+}
+
+alert(isTrue(100, 2))
 
 // チェックボックスの状態を監視するプログラム
 const checkedID = []
@@ -57,6 +72,8 @@ checkboxes.forEach(checkbox => {
       checkedID.push(checkbox.id)
       displayID = labelID[checkbox.id]
       document.getElementById(displayID).textContent = 1
+
+      // 正解かどうか確認する処理
     } else {
       console.log('チェックボックスがオフになりました');
 
