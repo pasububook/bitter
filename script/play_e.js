@@ -49,19 +49,20 @@ checkboxes.forEach(checkbox => {
     if (checkbox.checked) {
       console.log('チェックボックスがオンになりました');
       checkedID.push(checkbox.id)
-      alert(checkedID)
+      displayID = labelID[checkbox.id]
+      document.getElementById(displayID).textContent = 1
     } else {
       console.log('チェックボックスがオフになりました');
-      // チェックオフ時の処理をここに記述
+
       // 削除したい要素のインデックスを取得
       const index = checkedID.indexOf(checkbox.id);
 
-      // インデックスが存在する場合に削除
       if (index !== -1) {
         checkedID.splice(index, 1);
       }
 
-      alert(checkedID)
+      displayID = labelID[checkbox.id]
+      document.getElementById(displayID).textContent = 0
     }
   });
 });
