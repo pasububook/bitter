@@ -44,7 +44,30 @@ function isTrue(userNum, ans){
   }
 }
 
-alert(isTrue(100, 2))
+function to2(num2){
+    var ans = 0
+    for(var i =0; i < num2.length; i++){
+      if(num2[i] == "numKey_001"){
+        ans += 1
+      }else if(num2[i] == "numKey_002"){
+        ans += 2
+      }else if(num2[i] == "numKey_003"){
+        ans += 4
+      }else if(num2[i] == "numKey_004"){
+        ans += 8
+      }else if(num2[i] == "numKey_005"){
+        ans += 16
+      }else if(num2[i] == "numKey_006"){
+        ans += 32
+      }else if(num2[i] == "numKey_007"){
+        ans += 64
+      }else if(num2[i] == "numKey_008"){
+        ans += 128
+      }
+    }
+
+    return ans
+}
 
 // チェックボックスの状態を監視するプログラム
 const checkedID = []
@@ -73,7 +96,7 @@ checkboxes.forEach(checkbox => {
       displayID = labelID[checkbox.id]
       document.getElementById(displayID).textContent = 1
 
-      // 正解かどうか確認する処理
+      alert(to2(checkedID))
     } else {
       console.log('チェックボックスがオフになりました');
 
