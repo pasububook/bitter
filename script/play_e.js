@@ -27,6 +27,17 @@ window.onload = function() {
 
 // チェックボックスの状態を監視するプログラム
 const checkedID = []
+const labelID = {
+    numKey_001: "displayNum_001",
+    numKey_002: "displayNum_002",
+    numKey_003: "displayNum_003",
+    numKey_004: "displayNum_004",
+
+    numKey_005: "displayNum_005",
+    numKey_006: "displayNum_006",
+    numKey_007: "displayNum_007",
+    numKey_008: "displayNum_008",
+}
 
 // 常にclassがnoneのチェックボックスを取得
 const checkboxes = document.querySelectorAll('input[type="checkbox"].none');
