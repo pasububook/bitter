@@ -96,7 +96,8 @@ checkboxes.forEach(checkbox => {
       displayID = labelID[checkbox.id]
       document.getElementById(displayID).textContent = 1
 
-      alert(to2(checkedID))
+      // キーボード
+      document.getElementById("now_num").textContent = to2(checkedID)
     } else {
       console.log('チェックボックスがオフになりました');
 
@@ -109,6 +110,8 @@ checkboxes.forEach(checkbox => {
 
       displayID = labelID[checkbox.id]
       document.getElementById(displayID).textContent = 0
+
+      document.getElementById("now_num").textContent = to2(checkedID)
     }
   });
 });
