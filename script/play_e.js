@@ -24,6 +24,12 @@ window.onload = function() {
     startStopwatch();
 };
 
+// 問題の番号を作成する関数
+function nextQuestion(){
+  nowNum = Math.floor( Math.random() * 255)
+  document.getElementById("question").textContent = nowNum
+}
+nextQuestion()
 
 // チェックボックスの状態を監視するプログラム
 const checkedID = []
