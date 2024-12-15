@@ -101,11 +101,13 @@ checkboxes.forEach(checkbox => {
 
       if (to2(checkedID) == nowNum){
         alert("correct!")
-        if(questionID<=10){
+        if(questionID<10){
           questionID+=1
           nextQuestion()
           document.getElementById("progress_problem").value = questionID
           document.getElementById("title").textContent = `${questionID}/10`
+        }else{
+          window.location.href = "../../result"
         }
       }
     } else {
