@@ -167,41 +167,53 @@ questionID = 1
 // 各チェックボックスにイベントリスナーを設定
 checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', () => {
-    // チェック状態に応じて処理を実行
-    if (checkbox.checked) {
-        console.log(checkbox.id+'がオンになりました');
-        checkedID.push(checkbox.id)
-        displayID = labelID[checkbox.id]
-        document.getElementById(displayID).textContent = 1
+        // チェック状態に応じて処理を実行
+        if (checkbox.checked) {
+            console.log(checkbox.id+'がオンになりました');
+            checkedID.push(checkbox.id)
+            displayID = labelID[checkbox.id]
+            document.getElementById(displayID).textContent = 1
 
-          // キーボード
-        document.getElementById("now_num").textContent = to2(checkedID)
+            // キーボード
+            document.getElementById("now_num").textContent = to2(checkedID)
 
-        if (to2(checkedID) == nowNum){
-            alert("correct!")
-            if(questionID<10){
-                questionID+=1
-                nextQuestion()
-                document.getElementById("progress_problem").value = questionID
-                document.getElementById("title").textContent = `${questionID}/10`
-            }else{
-                window.location.href = "../../result"
+            if (to2(checkedID) == nowNum){
+                alert("correct!")
+                if(questionID<10){
+                    questionID+=1
+                    nextQuestion()
+                    document.getElementById("progress_problem").value = questionID
+                    document.getElementById("title").textContent = `${questionID}/10`
+                }else{
+                    window.location.href = "../../result"
+                }
             }
-        }
-    } else {
-        console.log('チェックボックスがオフになりました');
+        } else {
+            console.log('チェックボックスがオフになりました');
 
-        // 削除したい要素のインデックスを取得
-        const index = checkedID.indexOf(checkbox.id);
+            // 削除したい要素のインデックスを取得
+            const index = checkedID.indexOf(checkbox.id);
 
-        if (index !== -1) {
-            checkedID.splice(index, 1);
-        }
+            if (index !== -1) {
+                checkedID.splice(index, 1);
+            }
 
-        displayID = labelID[checkbox.id]
-        document.getElementById(displayID).textContent = 0
+            displayID = labelID[checkbox.id]
+            document.getElementById(displayID).textContent = 0
 
-        document.getElementById("now_num").textContent = to2(checkedID)
+            document.getElementById("now_num").textContent = to2(checkedID)
+
+            if (to2(checkedID) == nowNum){
+                alert("correct!")
+                if(questionID<10){
+                    questionID+=1
+                    nextQuestion()
+                    document.getElementById("progress_problem").value = questionID
+                    document.getElementById("title").textContent = `${questionID}/10`
+                }else{
+                    window.location.href = "../../result"
+                }
+            }
         }
     });
 });
