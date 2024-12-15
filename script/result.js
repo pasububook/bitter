@@ -1,3 +1,3 @@
 function goHome_btn(){
-    window.location.href = "../home"
+    window.location.href = "../index.html"
 }
