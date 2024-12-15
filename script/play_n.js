@@ -27,87 +27,89 @@ window.onload = function() {
 // 問題の番号を作成する関数
 var nowNum = 0
 function nextQuestion(){
-  nowNum = Math.floor( Math.random() * 255)
-  document.getElementById("question").textContent = nowNum
+    nowNum = Math.floor( Math.random() * 65536)
+    document.getElementById("question").textContent = nowNum
 }
 nextQuestion()
 
 // 正解かどうか確認する関数. Todo:将来的に削除
 function isTrue(userNum, ans){
-  // userNum: 10進数,  ans: 10進数
-  if (userNum2 == ans){
-    return true
-  }else{
-    return false
-  }
+    // userNum: 10進数,  ans: 10進数
+    if (userNum2 == ans){
+        return true
+    }else{
+        return false
+    }
 }
 
 function to2(num2){
     var ans = 0
     for(var i =0; i < num2.length; i++){
-      if(num2[i] == "numKey_001"){
-        ans += 1
-      }else if(num2[i] == "numKey_002"){
-        ans += 2
-      }else if(num2[i] == "numKey_003"){
-        ans += 4
-      }else if(num2[i] == "numKey_004"){
-        ans += 8
-      }else if(num2[i] == "numKey_005"){
-        ans += 16
-      }else if(num2[i] == "numKey_006"){
-        ans += 32
-      }else if(num2[i] == "numKey_007"){
-        ans += 64
-      }else if(num2[i] == "numKey_008"){
-        ans += 128
-      }else if(num2[i] == "numKey_009"){
-        ans += 256
-      }else if(num2[i] == "numKey_010"){
-        ans += 512
-      }else if(num2[i] == "numKey_011"){
-        ans += 1024
-      }else if(num2[i] == "numKey_012"){
-        ans += 2048
-      }else if(num2[i] == "numKey_013"){
-        ans += 4096
-      }else if(num2[i] == "numKey_014"){
-        ans += 8192
-      }else if(num2[i] == "numKey_015"){
-        ans += 16384
-      }else if(num2[i] == "numKey_016"){
-        ans += 32768
-      }else if(num2[i] == "numKey_017"){
-        ans += 65536
-      }else if(num2[i] == "numKey_018"){
-        ans += 131072
-      }else if(num2[i] == "numKey_019"){
-        ans += 262144
-      }else if(num2[i] == "numKey_020"){
-        ans += 524288
-      }else if(num2[i] == "numKey_021"){
-        ans += 1048576
-      }else if(num2[i] == "numKey_022"){
-        ans += 2097152
-      }else if(num2[i] == "numKey_023"){
-        ans += 419432
-      }else if(num2[i] == "numKey_024"){
-        ans += 8388608
-      }else if(num2[i] == "numKey_026"){
-        ans += 16777216
-      }else if(num2[i] == "numKey_027"){
-        ans += 33554432
-      }else if(num2[i] == "numKey_028"){
-        ans += 67108864
-      }else if(num2[i] == "numKey_029"){
-        ans += 134217728
-      }else if(num2[i] == "numKey_030"){
-        ans += 268435456
-      }else if(num2[i] == "numKey_031"){
-        ans += 536870912
-      }else if(num2[i] == "numKey_032"){
-        ans += 1073741824
-      }
+        if(num2[i] == "numKey_001"){
+            ans += 1
+        }else if(num2[i] == "numKey_002"){
+            ans += 2
+        }else if(num2[i] == "numKey_003"){
+            ans += 4
+        }else if(num2[i] == "numKey_004"){
+            ans += 8
+        }else if(num2[i] == "numKey_005"){
+            ans += 16
+        }else if(num2[i] == "numKey_006"){
+            ans += 32
+        }else if(num2[i] == "numKey_007"){
+            ans += 64
+        }else if(num2[i] == "numKey_008"){
+            ans += 128
+        }else if(num2[i] == "numKey_009"){
+            ans += 256
+        }else if(num2[i] == "numKey_010"){
+            ans += 512
+        }else if(num2[i] == "numKey_011"){
+            ans += 1024
+        }else if(num2[i] == "numKey_012"){
+            ans += 2048
+        }else if(num2[i] == "numKey_013"){
+            ans += 4096
+        }else if(num2[i] == "numKey_014"){
+            ans += 8192
+        }else if(num2[i] == "numKey_015"){
+            ans += 16384
+        }else if(num2[i] == "numKey_016"){
+            ans += 32768
+        }else if(num2[i] == "numKey_017"){
+            ans += 65536
+        }else if(num2[i] == "numKey_018"){
+            ans += 131072
+        }else if(num2[i] == "numKey_019"){
+            ans += 262144
+        }else if(num2[i] == "numKey_020"){
+            ans += 524288
+        }else if(num2[i] == "numKey_021"){
+            ans += 1048576
+        }else if(num2[i] == "numKey_022"){
+            ans += 2097152
+        }else if(num2[i] == "numKey_023"){
+            ans += 419432
+        }else if(num2[i] == "numKey_024"){
+            ans += 8388608
+        }else if(num2[i] == "numKey_025"){
+            ans += 16777216
+        }else if(num2[i] == "numKey_026"){
+            ans += 33554432
+        }else if(num2[i] == "numKey_027"){
+            ans += 67108864
+        }else if(num2[i] == "numKey_028"){
+            ans += 134217728
+        }else if(num2[i] == "numKey_029"){
+            ans += 268435456
+        }else if(num2[i] == "numKey_030"){
+            ans += 536870912
+        }else if(num2[i] == "numKey_031"){
+            ans += 1073741824
+        }else if(num2[i] == "numKey_032"){
+            ans += 2147483648 
+        }
     }
 
     return ans
@@ -164,42 +166,42 @@ questionID = 1
 
 // 各チェックボックスにイベントリスナーを設定
 checkboxes.forEach(checkbox => {
-  checkbox.addEventListener('change', () => {
+    checkbox.addEventListener('change', () => {
     // チェック状態に応じて処理を実行
     if (checkbox.checked) {
-      console.log('チェックボックスがオンになりました');
-      checkedID.push(checkbox.id)
-      displayID = labelID[checkbox.id]
-      document.getElementById(displayID).textContent = 1
+        console.log('チェックボックスがオンになりました');
+        checkedID.push(checkbox.id)
+        displayID = labelID[checkbox.id]
+        document.getElementById(displayID).textContent = 1
 
-      // キーボード
-      document.getElementById("now_num").textContent = to2(checkedID)
+          // キーボード
+        document.getElementById("now_num").textContent = to2(checkedID)
 
-      if (to2(checkedID) == nowNum){
-        alert("correct!")
-        if(questionID<10){
-          questionID+=1
-          nextQuestion()
-          document.getElementById("progress_problem").value = questionID
-          document.getElementById("title").textContent = `${questionID}/10`
-        }else{
-          window.location.href = "../../result"
+        if (to2(checkedID) == nowNum){
+            alert("correct!")
+            if(questionID<10){
+                questionID+=1
+                nextQuestion()
+                document.getElementById("progress_problem").value = questionID
+                document.getElementById("title").textContent = `${questionID}/10`
+            }else{
+                window.location.href = "../../result"
+            }
         }
-      }
     } else {
-      console.log('チェックボックスがオフになりました');
+        console.log('チェックボックスがオフになりました');
 
-      // 削除したい要素のインデックスを取得
-      const index = checkedID.indexOf(checkbox.id);
+        // 削除したい要素のインデックスを取得
+        const index = checkedID.indexOf(checkbox.id);
 
-      if (index !== -1) {
-        checkedID.splice(index, 1);
-      }
+        if (index !== -1) {
+            checkedID.splice(index, 1);
+        }
 
-      displayID = labelID[checkbox.id]
-      document.getElementById(displayID).textContent = 0
+        displayID = labelID[checkbox.id]
+        document.getElementById(displayID).textContent = 0
 
-      document.getElementById("now_num").textContent = to2(checkedID)
-    }
-  });
+        document.getElementById("now_num").textContent = to2(checkedID)
+        }
+    });
 });
