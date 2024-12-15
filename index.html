@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="version" content="1.0.0"></meta>
+    <title>bitter</title>
+
+    <link rel="stylesheet" href="./css/home.css">
+
+    <link rel="shortcut icon" href="./images/icon.svg">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="apple-touch-icon" href="./images/icon.png">
+    <meta name="apple-mobile-web-app-title" content="bitter">
+</head>
+<body>
+    <header>
+        <h1>レベルの選択</h1>
+    </header>
+    <main>
+        <section>
+            <div id="select_level">
+                <input type="radio" class="none" name="select_level" id="l_easy">
+                <label class="btn_big looks_btn" for="l_easy">初級 (8bit)</label>
+                <input type="radio" class="none" name="select_level" id="l_normal">
+                <label class="btn_big looks_btn" for="l_normal">中級 (16bit)</label>
+                <input type="radio" class="none" name="select_level" id="l_hard">
+                <label class="btn_big looks_btn" for="l_hard">上級 (32bit)</label>
+            </div>
+        </section>
+        <section>
+            <button class="btn_normal" id="btn_decide" onclick="movePlay()">決定</button>
+        </section>
+    </main>
+
+    <script src="./script/home.js"></script>
+</body>
+</html>

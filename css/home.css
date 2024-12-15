@@ -1,0 +1,77 @@
+:root{
+    /* 薄い色から 1, 2 とする */
+    --text: #000000;
+    --background_1: #F5F5F5;
+    --white: #FFFFFF;
+    --gray: #8E8E93;
+    --blue: #007AFF;
+    --green_1: #CFF7D3;
+    --green_2: #14AE5C;
+    --green_3: #34C759;
+    --pink_1: #FAE1FA;
+    --pink_2: #D732A8;
+    --red: #FF3B30;
+
+    --shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--background_1);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: var(--white);
+}
+h1{
+    text-align: center;
+    margin: auto;
+    font-size: 1.5em;
+    color: var(--text);
+}
+
+.none{
+    display: none;
+}
+#select_level{
+    text-align: center;
+}
+.btn_big{
+    display: inline-block;
+    width: calc(90% - 20px);
+    color: var(--text);
+    background-color: var(--white);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+    box-shadow: var(--shadow);
+}
+
+.btn_normal{
+    color: var(--blue);
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    border: none;
+    font-size: 1rem;
+    padding: 8px 35px;
+    border-radius: 500px;
+
+    position: fixed;
+    bottom: 20px;
+    right: 10%;
+}
+.disabled{
+    color: var(--gray);
+}

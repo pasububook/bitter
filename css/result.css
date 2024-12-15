@@ -1,0 +1,82 @@
+:root{
+    /* 薄い色から 1, 2 とする */
+    --text: #000000;
+    --background_1: #F5F5F5;
+    --white: #FFFFFF;
+    --gray: #8E8E93;
+    --blue: #007AFF;
+    --green_1: #CFF7D3;
+    --green_2: #14AE5C;
+    --green_3: #34C759;
+    --pink_1: #FAE1FA;
+    --pink_2: #D732A8;
+    --red: #FF3B30;
+
+    --shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--background_1);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: var(--white);
+}
+h1{
+    text-align: center;
+    margin: auto;
+    font-size: 1.5em;
+    color: var(--text);
+}
+
+/* 結果一覧 */
+#look_result{
+    width: 90%;
+    margin: auto 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color: var(--white);
+    margin-top: 20px;
+}
+.num_id{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.correct{
+    background-color: var(--green_1);
+    border: var(--green_2) solid 2px;
+}
+.incorrect{
+    background-color: var(--pink_1);
+    border: var(--pink_2) solid 2px;
+}
+
+/* ボタン */
+#goHome_btn{
+    background-color: var(--green_3);
+    color: var(--text);
+    border: none;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-size: 1.2rem;
+
+    position: fixed;
+    bottom: 20px;
+    right: 10%;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="version" content="1.0.0"></meta>
+    <title>bitter - 初級 (8bit)</title>
+
+    <link rel="stylesheet" href="../../css/play.css">
+
+    <link rel="shortcut icon" href="./images/icon.svg">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="apple-touch-icon" href="./images/icon.png">
+    <meta name="apple-mobile-web-app-title" content="bitter">
+</head>
+<body>
+    <header>
+        <div id="head_box">
+            <h1 id="title">1/10</h1><br>
+            <progress id="progress_problem" max="10" value="1"></progress>
+        </div>
+    </header>
+    <main>
+        <!-- インジケーター -->
+        <section>
+            <div id="indicators">
+                <h2 id="time">00:00</h2><br>
+                <p id="question"></p>
+            </div>
+        </section>
+
+        <!-- キーボード -->
+        <section>
+            <div id="keybord">
+                <p id="now_num">0</p>
+                <div id="numKey_area">
+                    <input type="checkbox" class="none" id="numKey_008">
+                    <input type="checkbox" class="none" id="numKey_007">
+                    <input type="checkbox" class="none" id="numKey_006">
+                    <input type="checkbox" class="none" id="numKey_005">
+                    <label id="displayNum_008" class="numKey" for="numKey_008">0</label>
+                    <label id="displayNum_007" class="numKey" for="numKey_007">0</label>
+                    <label id="displayNum_006" class="numKey" for="numKey_006">0</label>
+                    <label id="displayNum_005" class="numKey" for="numKey_005">0</label><br>
+                    
+                    <input type="checkbox" class="none" id="numKey_004">
+                    <input type="checkbox" class="none" id="numKey_003">
+                    <input type="checkbox" class="none" id="numKey_002">
+                    <input type="checkbox" class="none" id="numKey_001">
+                    <label id="displayNum_004" class="numKey" for="numKey_004">0</label>
+                    <label id="displayNum_003" class="numKey" for="numKey_003">0</label>
+                    <label id="displayNum_002" class="numKey" for="numKey_002">0</label>
+                    <label id="displayNum_001" class="numKey" for="numKey_001">0</label>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../../script/play_e.js"></script>
+</body>
+</html>
