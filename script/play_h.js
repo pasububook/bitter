@@ -61,6 +61,52 @@ function to2(num2){
         ans += 64
       }else if(num2[i] == "numKey_008"){
         ans += 128
+      }else if(num2[i] == "numKey_009"){
+        ans += 256
+      }else if(num2[i] == "numKey_010"){
+        ans += 512
+      }else if(num2[i] == "numKey_011"){
+        ans += 1024
+      }else if(num2[i] == "numKey_012"){
+        ans += 2048
+      }else if(num2[i] == "numKey_013"){
+        ans += 4096
+      }else if(num2[i] == "numKey_014"){
+        ans += 8192
+      }else if(num2[i] == "numKey_015"){
+        ans += 16384
+      }else if(num2[i] == "numKey_016"){
+        ans += 32768
+      }else if(num2[i] == "numKey_017"){
+        ans += 65536
+      }else if(num2[i] == "numKey_018"){
+        ans += 131072
+      }else if(num2[i] == "numKey_019"){
+        ans += 262144
+      }else if(num2[i] == "numKey_020"){
+        ans += 524288
+      }else if(num2[i] == "numKey_021"){
+        ans += 1048576
+      }else if(num2[i] == "numKey_022"){
+        ans += 2097152
+      }else if(num2[i] == "numKey_023"){
+        ans += 419432
+      }else if(num2[i] == "numKey_024"){
+        ans += 8388608
+      }else if(num2[i] == "numKey_026"){
+        ans += 16777216
+      }else if(num2[i] == "numKey_027"){
+        ans += 33554432
+      }else if(num2[i] == "numKey_028"){
+        ans += 67108864
+      }else if(num2[i] == "numKey_029"){
+        ans += 134217728
+      }else if(num2[i] == "numKey_030"){
+        ans += 268435456
+      }else if(num2[i] == "numKey_031"){
+        ans += 536870912
+      }else if(num2[i] == "numKey_032"){
+        ans += 1073741824
       }
     }
 
