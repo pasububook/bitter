@@ -169,7 +169,7 @@ checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', () => {
     // チェック状態に応じて処理を実行
     if (checkbox.checked) {
-        console.log('チェックボックスがオンになりました');
+        console.log(checkbox.id+'がオンになりました');
         checkedID.push(checkbox.id)
         displayID = labelID[checkbox.id]
         document.getElementById(displayID).textContent = 1
