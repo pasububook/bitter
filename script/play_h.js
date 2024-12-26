@@ -28,7 +28,7 @@ window.onload = function() {
 var nowNum = 0
 function nextQuestion(){
     nowNum = Math.floor( Math.random() * 2147483647)
-    document.getElementById("question").textContent = nowNum
+    document.getElementById("question").textContent = nowNum.toLocaleString();
 }
 nextQuestion()
 
@@ -175,7 +175,7 @@ checkboxes.forEach(checkbox => {
             document.getElementById(displayID).textContent = 1
 
             // キーボード
-            document.getElementById("now_num").textContent = to2(checkedID)
+            document.getElementById("now_num").textContent = to2(checkedID).toLocaleString();
 
             if (to2(checkedID) == nowNum){
                 alert("correct!")
