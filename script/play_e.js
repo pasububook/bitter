@@ -27,7 +27,7 @@ window.onload = function() {
 // 問題の番号を作成する関数
 var nowNum = 0
 function nextQuestion(){
-    nowNum = Math.floor( Math.random() * 255)
+    nowNum = Math.floor( Math.random() * 255);
     document.getElementById("question").textContent = nowNum
 }
 nextQuestion()
