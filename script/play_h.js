@@ -112,7 +112,7 @@ function to2(num2){
         }
     }
 
-    return ans.toLocaleString();
+    return ans
 }
 
 // チェックボックスの状態を監視するプログラム
